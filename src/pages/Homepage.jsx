@@ -70,7 +70,16 @@ function Homepage() {
                 </Col>
               </Row>
             </Container>
-            <Container fluid className='m-5'>
+            <Container>
+               <h3>Featured Products</h3>
+            </Container>
+            <Container fluid className='p-5' style={{display: 'flex', justifyContent: 'center'}}>
+              <Products/>
+            </Container>
+            <Container>
+               <h3>Exclusive Deals</h3>
+            </Container>
+            <Container fluid className='p-5' style={{display: 'flex', justifyContent: 'center'}}>
               <Products/>
             </Container>
             <Footer/>

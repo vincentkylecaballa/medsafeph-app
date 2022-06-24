@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@1,900&display=swap');
-.page-title {
-    font-family: 'Khula', sans-serif;
-    font-weight: 700;
-    color: #238878;
-    font-size: 4vh;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: start;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@1,900&display=swap');
+    .page-title {
+        font-family: 'Khula', sans-serif;
+        font-weight: 700;
+        color: #238878;
+        font-size: 4vh;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: start;
+    }
+    
+    .cart-button {
+        padding: 0;
+        margin: 0;
+        font-size: 2vh;
+    }
