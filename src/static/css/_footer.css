@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@1,900&display=swap');
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.footer-one {
+    padding: 3em;
+    background-color: #238878;
+}
+
+.footer-two {
+    background-color: #4CA9EE;
+    padding: 0.5em;
+}
+
+.footer-title,
+.footer-subtitle {
+    display: flex;
+    justify-content: left !important;
+    color: white;
+}
+
+.footer-title {
+    margin-top: 1em;
+}
+
+.list-unstyled {
+    color: white;
+    text-align: left !important;
+    display: inline;
+    justify-content: left !important;
+}

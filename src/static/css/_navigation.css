@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@1,900&display=swap');
+.navbar-image {
+    width: 12em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.search-input {
+    width: 30em;
+    height: 3em;
+    border-top-left-radius: 20em;
+    border-bottom-left-radius: 20em;
+    background-color: #e2e2e2;
+    color: white;
+}
+
+.search-item-btn {
+    width: 9em;
+    height: 3em;
+    border-top-right-radius: 20em;
+    border-bottom-right-radius: 20em;
+    font-family: 'Khula', sans-serif;
+    background-color: #4CA9EE;
+    font-weight: 400;
+}
+
+.log-in-txt {
+    color: black;
+    font-family: 'Khula', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 1em;
+    margin-left: 5em;
+}
+
+.sign-up-btn {
+    background-color: #4CA9EE;
+    width: 140px;
+    height: 50px;
+    font-family: 'Khula', sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.second-nav {
+    font-family: 'Khula', sans-serif;
+    margin: auto;
+    padding: 1.2em;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.navbar-two {
+    background-color: #238878;
+}
+
+.cart-btn-icon {
+    color: #4CA9EE
+}
+
+.shopping-cart-ctn {
+    margin-left: 2em;
+}
+
+.my-shopping-cart {
+    color: black !important;
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    font-size: 2.3vh;
+}
+
+.second-nav:hover {
+    background: #4CA9EE;
+    border-radius: 20px;
+    padding: 0.8em;
+}

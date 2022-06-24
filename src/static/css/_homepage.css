@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Montserrat:ital,wght@1,900&display=swap');
+.spiel-title {
+    font-family: 'Khula', sans-serif !important;
+    font-weight: 700 !important;
+    text-align: left;
+}
+
+.spiel-subtitle {
+    height: 3em;
+    line-height: 1em;
+    overflow: hidden;
+    font-size: small;
+}
+
+.content-left {
+    border-right: 1px solid #333;
+}
+
+.spiel-image {
+    max-width: fit-content;
+    max-height: fit-content;
+}
