@@ -9,6 +9,9 @@ const Footer = () => {
             <Row>
                 <Col>
                     <h5 className='footer-title'>About MedSafe</h5>
+                    <p className='footer-text text-left'>
+                        MedSafe is a web application that helps users to find the best medical services in their area. 
+                    </p>
                 </Col>
                 <Col>
                     <h5 className='footer-title'>Quick Links</h5>
@@ -37,6 +40,9 @@ const Footer = () => {
                 </Col>
                 <Col>
                     <h5 className='footer-title'>Contact Us</h5>
+                    <form>
+                        
+                    </form>
                 </Col>
             </Row>
         </div>

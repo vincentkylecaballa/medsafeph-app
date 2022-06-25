@@ -1,4 +1,3 @@
-import { dividerClasses } from '@mui/material';
 import React, {useState} from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
 import '../App.css';
@@ -37,8 +36,8 @@ const PersonalCare = () => {
             
           </Col>
           <Col md={9} className='mt-5 mb-5 border-left'> 
+          <h4 className='mt-5 mb-5 page-title'>Personal Care</h4>
               <Container fluid>
-              <h4 className='mt-5 mb-5 page-title'>Personal Care</h4>
                 <Grid container
                   spacing={12}
                   direction="row"

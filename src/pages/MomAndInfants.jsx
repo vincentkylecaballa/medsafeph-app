@@ -36,8 +36,8 @@ const MomAndInfants = () => {
             
           </Col>
           <Col md={9} className='mt-5 mb-5 border-left'> 
+          <h4 className='mt-5 mb-5 page-title'>Mom & Infants</h4>
               <Container fluid>
-              <h4 className='mt-5 mb-5 page-title'>Mom and Infants</h4>
                 <Grid container
                   spacing={12}
                   direction="row"
@@ -56,6 +56,7 @@ const MomAndInfants = () => {
           </Col>
         </Row>
       </Container>
+      <Footer/>
     </>
     );
 }

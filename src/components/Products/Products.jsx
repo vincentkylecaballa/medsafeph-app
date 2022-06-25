@@ -7,53 +7,50 @@ import Product from './Product/Product'
 const products = [{
         id: 1,
         name: 'Biogesic',
-        description: 'Over-the-counter medicines',
-        price: 'PHP 25.50',
+        description: 'Over the counter medicines',
+        price: '₱25.50',
         image: 'https://www.rosepharmacy.com/ph1/wp-content/uploads/2018/05/68332.png'
     },
     {
         id: 2,
         name: 'Centrum',
         description: 'Over the counter medicines',
-        price: "PHP 20.75",
+        price: "₱20.75",
         image: 'https://www.rosepharmacy.com/ph1/wp-content/uploads/2016/12/70106.webp'
     },
     {
         id: 3,
         name: 'Centrum',
         description: 'Over the counter medicines',
-        price: "PHP 20.75",
+        price: "₱20.75",
         image: 'https://www.rosepharmacy.com/ph1/wp-content/uploads/2016/12/70106.webp'
     },
     {
         id: 4,
         name: 'Centrum',
         description: 'Over the counter medicines',
-        price: "PHP 20.75",
+        price: "₱20.75",
         image: 'https://www.rosepharmacy.com/ph1/wp-content/uploads/2016/12/70106.webp'
     }
 ]
 
 const Products = () => {
-    return ( <
-        main >
-        <
-        Grid container justify = "center"
-        spacing = { 4 } > {
+    return ( 
+        <main>
+        <Grid container justify = "center"
+        spacing = { 3 } > {
             products.map((product) => ( <
                 Col item key = { product.id }
                 xs = { 12 }
                 sm = { 6 }
                 md = { 4 }
                 lg = { 3 } >
-                <
-                Product product = { product }
-                /> < /
-                Col >
+                <Product product = { product }/>  
+                </Col>
             ))
-        } <
-        /Grid> < /
-        main >
+        } 
+        </Grid>  
+        </main>
     );
 }
 

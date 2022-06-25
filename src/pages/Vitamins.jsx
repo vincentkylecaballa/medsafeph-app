@@ -37,9 +37,9 @@ const Vitamins = () => {
             </Container>
             
           </Col>
-          <Col md={9} className='mt-5 mb-5 border-left'> 
-              <Container fluid>
-              <h4 className='mt-5 mb-5 page-title'>Over-the-counter Vitamins</h4>
+          <Col md={9} className='mt-5 mb-5 border-left'>  
+            <h4 className='mt-5 mb-5 page-title'>Over-the-counter Vitamins</h4>
+              <Container fluid>   
                 <Grid container
                   spacing={12}
                   direction="row"

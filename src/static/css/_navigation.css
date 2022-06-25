@@ -58,6 +58,12 @@
     color: #4CA9EE
 }
 
+.cart-button {
+    background-color: transparent;
+    min-width: 1em;
+    min-height: 1em;
+}
+
 .shopping-cart-ctn {
     margin-left: 2em;
 }

@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from '../components/Products/Products';
 import Footer from '../components/Footer/Footer';
 import '../static/css/_homepage.css';
+import {TbTruckDelivery} from 'react-icons/tb'
+import {MdPayment, MdOutlinePriceCheck} from 'react-icons/md'
 
 function Homepage() {
   const [products, setProducts] = useState([]);
@@ -32,7 +34,7 @@ function Homepage() {
                 <Col md={4}>
                   <Row>
                     <Col md={5}>
-                      <img className='spiel-image' src="../images/secured-payment.png" alt="" srcset="" />
+                      <TbTruckDelivery size={70} className='icons'/>
                     </Col>
                     <Col md={7}>
                       <h5 className='spiel-title text-left'>Same Day Delivery</h5>
@@ -43,9 +45,9 @@ function Homepage() {
                   </Row>
                 </Col>
                 <Col md={4}>
-                <Row>
+                <Row noGutters>
                     <Col md={5}>
-                      <img className='spiel-image' src="../images/secured-payment.png" alt="" srcset="" />
+                      <MdPayment size={70} className='icons'/>
                     </Col>
                     <Col md={7}>
                       <h5 className='spiel-title text-left'>Secured Payment</h5>
@@ -56,9 +58,9 @@ function Homepage() {
                   </Row>
                 </Col>
                 <Col md={4}>
-                <Row>
+                <Row noGutters>
                     <Col md={5}>
-                      <img className='spiel-image' src="../images/secured-payment.png" alt="" srcset="" />
+                      <MdOutlinePriceCheck size={70} className='icons'/>
                     </Col>
                     <Col md={7}>
                       <h5 className='spiel-title text-left'>Standard Price</h5>
@@ -71,13 +73,13 @@ function Homepage() {
               </Row>
             </Container>
             <Container>
-               <h3>Featured Products</h3>
+              <h3 className='pt-3 pb-3 mt-2 mb-2 homepage-title'>Featured Products</h3>
             </Container>
             <Container fluid className='p-5' style={{display: 'flex', justifyContent: 'center'}}>
               <Products/>
             </Container>
             <Container>
-               <h3>Exclusive Deals</h3>
+              <h3 className='pt-3 pb-3 mt-2 mb-2 homepage-title'>Exclusive Deals</h3>
             </Container>
             <Container fluid className='p-5' style={{display: 'flex', justifyContent: 'center'}}>
               <Products/>
