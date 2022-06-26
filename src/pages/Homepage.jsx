@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import '../static/css/_homepage.css';
 import {TbTruckDelivery} from 'react-icons/tb'
 import {MdPayment, MdOutlinePriceCheck} from 'react-icons/md'
+import Navigation from '../components/Navigation/Navigation'
 
 function Homepage() {
   const [products, setProducts] = useState([]);
@@ -28,6 +29,7 @@ function Homepage() {
   console.log(products);
     return (
         <div>
+            <Navigation/>
             <ImageSlider slides={SliderData} /> 
             <Container className='mt-5 mb-5'>
               <Row>

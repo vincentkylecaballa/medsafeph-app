@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer'
 import '../../src/static/css/_personalcare.css'
 import Products from '../components/Products/Products'
 import {Grid} from '@mui/material'
+import Navigation from '../components/Navigation/Navigation';
 
 const Vitamins = () => {
   
@@ -24,6 +25,7 @@ const Vitamins = () => {
 
   return (
     <>
+      <Navigation/>
       <Container fluid>
         <Row noGutters>
           <Col md={3} className='mt-5'>

@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer'
 import '../../src/static/css/_personalcare.css'
 import Products from '../components/Products/Products'
 import {Grid} from '@mui/material'
+import Navigation from '../components/Navigation/Navigation';
 
 const MomAndInfants = () => {
     const [data, setData]=useState(Categories);
@@ -22,6 +23,7 @@ const MomAndInfants = () => {
 
   return (
     <>
+      <Navigation/>
       <Container fluid>
         <Row noGutters>
           <Col md={3} className='mt-5'>
