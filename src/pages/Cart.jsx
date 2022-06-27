@@ -23,7 +23,7 @@ const Cart =()  =>{
         <section className="container-fluid">
             <div className="row justify-content-center">
                 <div className="col-12">
-                    <h1 className ="cart-header"> Shopping Cart</h1>
+                    <h1 className ="cart-header">Shopping Cart</h1>
                 <div className= "row-cartTotal row justify-content-left">
                     <h4>Cart ({totalUniqueItems}) Total Items: ({totalItems})</h4>
                 </div>
