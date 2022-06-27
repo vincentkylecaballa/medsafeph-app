@@ -5,7 +5,7 @@ import '../../static/css/_footer.css'
 const Footer = () => {
   return (
     <>
-        <div className='footer-one'>
+        <div className='footer-one' >
             <Row>
                 <Col>
                     <h5 className='footer-title'>About MedSafe</h5>

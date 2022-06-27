@@ -12,6 +12,7 @@ import '../static/css/_homepage.css';
 import {TbTruckDelivery} from 'react-icons/tb'
 import {MdPayment, MdOutlinePriceCheck} from 'react-icons/md'
 import Navigation from '../components/Navigation/Navigation'
+import Cart from "../pages/Cart"
 
 function Homepage() {
   const [products, setProducts] = useState([]);
@@ -26,11 +27,15 @@ function Homepage() {
     fetchProduct();
   }, []);
 
+  const [show, setShow] = useState(true);
+
   console.log(products);
     return (
         <div>
-            <Navigation/>
+            <Navigation setShow={setShow}/>
+            {show ? (
             <ImageSlider slides={SliderData} /> 
+            ):(<Cart />)}
             <Container className='mt-5 mb-5'>
               <Row>
                 <Col md={4}>

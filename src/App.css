@@ -98,3 +98,25 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.cart-header{
+    padding: 30px;
+}
+
+.row-cartTotal{
+    padding-left: 20px;
+    font-size:larger;
+}
+.btn-info{
+    width:60px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.btn-success{
+    margin-bottom: 10px;
+}
+
+.btn-danger{
+    margin:10px;
+}

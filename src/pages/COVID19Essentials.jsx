@@ -8,6 +8,7 @@ import '../../src/static/css/_personalcare.css'
 import Products from '../components/Products/Products'
 import {Grid} from '@mui/material'
 import Navigation from '../components/Navigation/Navigation';
+import Cart from "../pages/Cart"
 
 const COVID19Essentials = () => {
     const [data, setData]=useState(Categories);
@@ -19,9 +20,12 @@ const COVID19Essentials = () => {
         setData(result);
     }
 
+    const [show, setShow] = useState(true);
+
     return (
         <>
-        <Navigation/>
+        <Navigation setShow = {setShow}/>
+        {show ? (
         <Container fluid>
             <Row noGutters>
             <Col md={3} className='mt-5'>
@@ -33,7 +37,6 @@ const COVID19Essentials = () => {
                 <button className="btn btn-info w-100 mb-4" onClick={()=>filterResult('Oral Care')}>Oral Care</button>
                 <button className="btn btn-info w-100 mb-4" onClick={()=>filterResult('Eye Care')}>Eye Care</button>
                 </Container>
-                
             </Col>
             <Col md={9} className='mt-5 mb-5 border-left'> 
             <h4 className='mt-5 mb-5 page-title'>COVID-19 Essentials</h4>
@@ -56,6 +59,7 @@ const COVID19Essentials = () => {
             </Col>
             </Row>
         </Container>
+        ):(<Cart />)}
         <Footer/>
         </>
     );

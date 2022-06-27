@@ -42,6 +42,15 @@
     font-size: 16px;
 }
 
+.cart-button {
+    background-color: #4CA9EE;
+    width: 140px;
+    height: 50px;
+    font-family: 'Khula', sans-serif;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
 .second-nav {
     font-family: 'Khula', sans-serif;
     margin: auto;
@@ -58,11 +67,6 @@
     color: #4CA9EE
 }
 
-.cart-button {
-    background-color: transparent;
-    min-width: 1em;
-    min-height: 1em;
-}
 
 .shopping-cart-ctn {
     margin-left: 2em;

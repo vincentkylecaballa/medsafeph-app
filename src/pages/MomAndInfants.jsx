@@ -10,6 +10,7 @@ import '../../src/static/css/_personalcare.css'
 import Products from '../components/Products/Products'
 import {Grid} from '@mui/material'
 import Navigation from '../components/Navigation/Navigation';
+import Cart from "../pages/Cart"
 
 const MomAndInfants = () => {
     const [data, setData]=useState(Categories);
@@ -20,10 +21,11 @@ const MomAndInfants = () => {
 
         setData(result);
     }
-
+    const [show, setShow] = useState(true);
   return (
     <>
-      <Navigation/>
+      <Navigation setShow = {setShow}/>
+      {show ? (
       <Container fluid>
         <Row noGutters>
           <Col md={3} className='mt-5'>
@@ -38,7 +40,7 @@ const MomAndInfants = () => {
             
           </Col>
           <Col md={9} className='mt-5 mb-5 border-left'> 
-          <h4 className='mt-5 mb-5 page-title'>Mom & Infants</h4>
+          <h4 className='mt-5 mb-5 page-title'>Mom and Infants</h4>
               <Container fluid>
                 <Grid container
                   spacing={12}
@@ -46,7 +48,6 @@ const MomAndInfants = () => {
                   justify="flex-start"
                   alignItems="flex-start">
                       {data.map((values)=>{
-                        const {id,title,price,description,image}=values;
                         return(
                           <Grid item xs={12} sm={6} md={12}>
                             <Products/>
@@ -58,6 +59,7 @@ const MomAndInfants = () => {
           </Col>
         </Row>
       </Container>
+       ):(<Cart />)}
       <Footer/>
     </>
     );

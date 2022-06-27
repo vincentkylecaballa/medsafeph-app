@@ -3,23 +3,27 @@ import {Card, CardMedia, CardContent, CardActions, Typography, IconButton, Grid,
 import useStyles from '../Product/styles.js'
 import './../../../static/css/_card.css'
 import {BsCartPlusFill} from 'react-icons/bs'
+import { useCart } from "react-use-cart";
+ 
 
-const Product = ({product}) => {
+const Product = (props) => {
     const classes = useStyles();  
+    const {addItem} = useCart(); 
+
     return (
         <Card className={classes.root}>
-            <CardMedia className={classes.media} image={product.image} title={product.name} />
+            <CardMedia className={classes.media} image={props.image} title={props.name} />
                 <CardContent>
                     <div className={classes.cardContent}>
                         <Box ml={1} mr={1}>
                             <Typography className='title-card' gutterBottom variant="h6" component="h2">
-                                {product.name}
+                                {props.name}
                             </Typography>
                         </Box>
                     </div>
                     <Box ml={1} mr={1}>
                         <Typography variant="body2" color="textSecondary" component="p" align="left" style={{wordWrap: 'break-word'}}>
-                            {product.description}
+                            {props.description}
                         </Typography>
                     </Box>
                 </CardContent>
@@ -27,11 +31,11 @@ const Product = ({product}) => {
                 <Grid container spacing={12}>
                     <Grid item md={6}>
                         <Typography gutterBottom variant="h6" component="h2">
-                            {product.price}
+                        ₱{props.price}
                         </Typography>
                     </Grid>
                     <Grid item md={6}>
-                        <IconButton aria-label='Add to Cart'>
+                        <IconButton aria-label='Add to Cart' onClick={()=>addItem(props.item)}>
                             <BsCartPlusFill />
                         </IconButton>
                     </Grid>

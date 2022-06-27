@@ -4,8 +4,8 @@ import '../../static/css/_navigation.css';
 import {Cart} from 'react-bootstrap-icons';
 import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap'
 
-export default class Navigation extends Component {
-  render() {
+ const Navigation = ({setShow}) =>{
+
     return (
         <>
           <Navbar Col md={12}>
@@ -24,34 +24,38 @@ export default class Navigation extends Component {
                 <Button onClick={() => this.nextPath('/register')} size='md' className='sign-up-btn'>Sign Up</Button>
                 <Nav.Link className='my-shopping-cart'>  
                   <Container fluid className='shopping-cart-ctn'>
+                    <Button className='cart-button p-2' onClick={() => setShow(false)}>
                     <span>
-                      <Cart size={20} />
-                      Shopping Cart
+                      <Cart size={20}/> 
+                       Shopping Cart
                     </span>
+                    </Button>
                   </Container>
                 </Nav.Link>
           </Navbar>
           <Nav className='navbar-two'>
                   <LinkContainer to="/" activeClassName='active'>
-                    <Nav.Link className='second-nav'>HOME</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>HOME</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/vitamins" activeClassName='active'>
-                    <Nav.Link className='second-nav'>VITAMINS</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>VITAMINS</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/medicalequipments" activeClassName='active'>
-                    <Nav.Link className='second-nav'>MEDICAL EQUIPMENTS</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>MEDICAL EQUIPMENTS</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/personalcare" activeClassName='active'>
-                    <Nav.Link className='second-nav'>PERSONAL CARE</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>PERSONAL CARE</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/momandinfants" activeClassName='active'>
-                    <Nav.Link className='second-nav'>MOM AND INFANT</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>MOM AND INFANT</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/covid19essential" activeClassName='active'>
-                    <Nav.Link className='second-nav'>COVID-19 ESSENTIALS</Nav.Link>
+                    <Nav.Link className='second-nav' onClick={() => setShow(true)}>COVID-19 ESSENTIALS</Nav.Link>
                   </LinkContainer>
             </Nav>
         </>
     )
-  }
+  
 }
+
+export default Navigation;
