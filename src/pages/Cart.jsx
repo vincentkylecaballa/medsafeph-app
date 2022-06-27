@@ -17,7 +17,7 @@ const Cart =()  =>{
     } =useCart()
 
 
-    if(isEmpty) return <h1 className = "text-center">Your Cart is empty</h1>
+    if(isEmpty) return <h1 className = "empty-cart text-center">Your Cart is Empty</h1>
 
     return(
         <section className="container-fluid">
