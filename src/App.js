@@ -12,12 +12,10 @@ import Register from './pages/Register';
 import {CartProvider} from "react-use-cart";
 import Cart from "./pages/Cart"
 
-
 function App() { 
   return(
     <BrowserRouter>
     <CartProvider>
-    
     <div className="App">
         <Switch>
           <Route path="/" exact component={Homepage} loading='lazy' />
@@ -28,7 +26,7 @@ function App() {
           <Route path="/covid19essential" component={COVID19Essentials} />  
           <Route path="/login" component={Login} />
           <Route path="/Register" component={Register} />
-          
+          <Route path="/cart" component={Cart} />
         </Switch>
     </div>
     </CartProvider>

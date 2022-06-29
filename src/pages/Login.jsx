@@ -2,7 +2,8 @@ import React from 'react'
 import { Row, Col, Form, Button, Container } from 'react-bootstrap';
 import {ReactComponent as MedicalCare} from '../images/undraw_medical_care_movn.svg'
 import '../static/css/_login.css'
-
+import {AiOutlineGoogle} from 'react-icons/ai'
+import {BsFacebook} from 'react-icons/bs'
 
 const Login = () => {
     return (
@@ -23,11 +24,13 @@ const Login = () => {
                             <start>
                                 <Form.Label className='text-label mb-3'>Email address</Form.Label>
                             </start>
-                            <Form.Control className='form-input w-100' type="email" placeholder="Enter your Email Address" />
+                            <Form.Control className='form-input w-100' type="email" placeholder="Enter your Email Address"
+                            />
                         </Form.Group>
                         <Form.Group className='mt-5 mb-2 ml-5 mr-5'>
                             <Form.Label className='text-label mb-3'>Password</Form.Label>
-                            <Form.Control className='form-input w-100' type="password" placeholder="Enter your password" />
+                            <Form.Control className='form-input w-100' type="password" placeholder="Enter your password"
+                            />
                         </Form.Group>
                     </Form>
                         <Col md={12} className='mt-2 mb-3'>
@@ -38,7 +41,7 @@ const Login = () => {
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
-                                    Forgot Password?
+                                    <a href='/register' style={{color: "black"}}>No Account?</a>
                                 </Col>
                             </Row>
                         </Col>
@@ -63,13 +66,13 @@ const Login = () => {
                         <Col md={12}>
                             <Row noGutters> 
                                 <Col md={6}>    
-                                    <Button variant="primary" type="submit">    
-                                        <img src="../assets/google-logo.png" alt="" />  
+                                    <Button variant="outline-primary" type="submit">   
+                                        <AiOutlineGoogle size={30} className='icons'/>
                                     </Button>
                                 </Col>  
                                 <Col md={6}>
-                                    <Button variant="primary" type="submit">
-                                        <img src="../assets/facebook-logo.png" alt="" />
+                                    <Button variant="outline-primary" type="submit">
+                                        <BsFacebook size={30} className='icons'/>
                                     </Button>
                                 </Col>
                             </Row>

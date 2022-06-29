@@ -2,8 +2,6 @@ import React from "react";
 import { TbDotsDiagonal } from "react-icons/tb";
 import {useCart} from "react-use-cart";
 import 'bootstrap/dist/css/bootstrap.min.css';
- 
-
 const Cart =()  =>{
     const { 
         isEmpty,
